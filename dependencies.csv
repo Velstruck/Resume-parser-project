@@ -1,0 +1,11 @@
+flask,pip
+pandas,pip
+nltk,pip
+scikit-learn,pip
+scipy,pip
+numpy,pip
+beautifulsoup4,pip
+requests,pip
+python-docx,pip
+textract,pip
+pytesseract,pip

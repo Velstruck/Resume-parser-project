@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.Page_title{
+    
+}
+
+.container { 
+    max-width: 800px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.file-input {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.file-input:hover {
+    border-color: #aaa;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Result Styles */
+.result {
+    margin-top: 30px;
+}
+
+.result-heading {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.result-heading:first-child {
+    margin-top: 0;
+}

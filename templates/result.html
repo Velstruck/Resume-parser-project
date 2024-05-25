@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Parsing Result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Resume Parsing Result</h1>
+        <div class="result">
+            <h2 class="result-heading">Skills Probability: {{ skills_prob }}</h2>
+            <h2 class="result-heading">Experience Probability: {{ experience_prob }}</h2>
+            <h2 class="result-heading">Projects Probability: {{ projects_prob }}</h2>
+            <h2 class="result-heading">Academics Probability: {{ academics_prob }}</h2>
+        </div>
+    </div>
+</body>
+</html>
