@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Resumes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="loading" class="loading">
+        <div class="loading-spinner"></div>
+        <p>Loading... Please wait.</p>
+    </div>
+    <div class="container">
+        <h1>Upload Resumes</h1>
+        <form action="/parse_resume" method="post" enctype="multipart/form-data" onsubmit="showLoading()">
+            <label for="resumes">Upload Resumes:</label>
+            <input type="file" name="resumes" id="resumes" multiple required accept=".txt,.pdf">
+            <button type="submit">Parse Resumes</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

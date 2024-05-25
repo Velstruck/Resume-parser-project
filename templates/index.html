@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <div class="Page_title">Resume Parser</div>
     <div class="container">
-        <h1 class="heading">Upload Your Resume</h1>
-        <form action="/parse_resume" method="post" enctype="multipart/form-data" class="form">
-            <input type="file" name="resume" accept=".pdf" class="file-input">
-            <button type="submit" class="submit-btn">Parse Resume</button>
+        <h1>Resume Parser</h1>
+        <form action="/upload" method="post">
+            <label for="num_resumes">Number of Resumes to Parse:</label>
+            <input type="number" name="num_resumes" id="num_resumes" min="1" required>
+            <button type="submit">Next</button>
         </form>
     </div>
 </body>

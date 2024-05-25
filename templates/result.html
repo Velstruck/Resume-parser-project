@@ -9,13 +9,20 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="heading">Resume Parsing Result</h1>
-        <div class="result">
-            <h2 class="result-heading">Skills Probability: {{ skills_prob }}</h2>
-            <h2 class="result-heading">Experience Probability: {{ experience_prob }}</h2>
-            <h2 class="result-heading">Projects Probability: {{ projects_prob }}</h2>
-            <h2 class="result-heading">Academics Probability: {{ academics_prob }}</h2>
+        <h1>Parsing Results</h1>
+        {% for result in results %}
+        <div class="resume-result">
+            <h2>Applicant {{ loop.index }} Details</h2>
+            <p><strong>Name:</strong> {{ result.name }}</p>
+            <p><strong>Institutions:</strong> <span class="details">{{ result.institutions }}</span></p>
+            <p><strong>Workplaces:</strong> <span class="details">{{ result.workplaces }}</span></p>
+            <h2>Applicant Percentage in Different Aspects</h2>
+            <p><strong>Skills:</strong> <span class="percentage">{{ result.skills_prob }}</span></p>
+            <p><strong>Experience:</strong> <span class="percentage">{{ result.experience_prob }}</span></p>
+            <p><strong>Projects:</strong> <span class="percentage">{{ result.projects_prob }}</span></p>
+            <p><strong>Academics:</strong> <span class="percentage">{{ result.academics_prob }}</span></p>
         </div>
+        {% endfor %}
     </div>
 </body>
 </html>
